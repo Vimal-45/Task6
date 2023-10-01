@@ -1,0 +1,297 @@
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background-color: #f8f9fa;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: darkblue;
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none !important;
+}
+.nav-links li {
+  margin-bottom: 20px;
+}
+
+
+.container{
+  margin-left: 320px;
+ width: 75%;
+}
+
+
+
+.empty{
+  height: 2.5rem;
+}
+
+.noteCom{
+  box-shadow:-8px -4px 20px 3px rgba(0, 3, 4, 0.2);
+  width: 100%;
+  height: 360px;
+  /* border: 1px solid black; */
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding-left: 5%;
+  padding-top: 2%;
+  
+
+}
+
+.form-control{
+  border: none;
+  outline: none;
+  background-color:#f8f9fa;
+
+ 
+}
+
+.boxBack{
+
+  background-color: rgb(232, 244, 255);
+  width: 100%;
+  
+
+}
+
+.card-title {
+ display: flex;
+ justify-content: space-between;
+ /* background-color: red; */
+ width: 100%;
+ align-items: center;
+
+}
+
+
+
+
+.taskSection{
+
+ margin-top: 1rem;
+ border: 1px solid rgb(216, 216, 229);
+ box-shadow: 1px 3px 20px 6px rgba(0, 3, 4, 0.2);
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    
+  
+}
+
+.cardContainer{
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem ;
+  display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+
+}
+
+
+#root{
+  background-color: rgb(233, 241, 254);
+}
+
+*{
+  color: darkblue;
+}
+
+
+
+.button{
+  border: none;
+background: none;
+}
+.btn{
+  background: none;
+  color: darkblue;
+}
+
+li>.bi{
+
+  font-size: 20px;
+  
+  
+}
+
+
+li>a{
+  margin-left: 1rem;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+}
+
+.profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+
+.nav-button{
+  border: none;
+  background: none;
+  width: 100%;
+  display: flex;
+  justify-content:left;
+  gap: 25px;
+  font-size: 25px;
+  
+}
+
+.nav-button:hover, .nav-button>i:hover{
+
+  background-color: darkblue;
+  border-radius: 5px;
+  color: white;
+  
+}
+
+.taskTitle{
+ font-size: larger;
+}
+
+.taskday{
+
+  font-size: small;
+
+}
+.notes{
+color: black;
+}
+.time{
+  color:darkgrey;
+
+}
+
+p>span{
+
+  display: flex;
+  flex-direction: column;
+   margin-left: 3rem;
+  
+}
+
+
+.icons {
+  display: flex;
+  gap: 10px; 
+
+ 
+}
+
+.icon-button {
+    
+  padding: 10px; 
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: #f8f9fa;
+  
+}
+
+.icon-button>i {
+  font-size: 24px;   
+ 
+}
+
+
+.icon-button:hover {
+  background-color: #0056b3; 
+  color: white;
+}
+
+
+.clok{
+  margin-left: 3rem;
+}
+
+
+.circle{
+
+  border: none;
+}
+
+.circle:hover{
+  background-color: none !important;
+}
+
+
+.taskbox>p{
+
+  background-color:#0056b3
+}
+
+
+.taskbox>div>div {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+
+.taskContent{
+  text-align: start;
+  margin-right: 40rem;
+ /* border: 1px solid black; */
+ width: 100%;
+}
+
+.custom-date-input {
+  margin-top: 3rem;
+  height: 30px;
+  width: 15%;
+ 
+}
+
+.custom-date-input::-webkit-datetime-edit-fields-wrapper {
+  display: none;
+}
+
+.custom-date-input::-webkit-calendar-picker-indicator {
+ font-size: 30px;
+ position: absolute;
+}

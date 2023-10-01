@@ -1,0 +1,39 @@
+{
+    "value": [
+      { "id":1,
+        "Title": "Feedback",
+        "Note":"Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vstibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. .",
+          "Time": "5 days ago"
+      },
+      {
+        "id":2,
+        "Title": "Weekly Task",
+        "Note": "Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vstibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. .",
+        "Time": "4 days ago"
+      },
+      {
+        "id":3,
+        "Title": "Lyrics",
+        "Note": "Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vstibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. .",
+        "Time": "3 days ago"
+       },
+      {
+        "id":4,
+        "Title": "Lyrics2",
+        "Note":"Lorem ipsum dolor sit amet consectetur. Sollicitudin enim risus ut vstibulum morbi tellus sit ac. Fames auctor quisque et aliquam maecenas sed at vitae facilisis. .",
+        "Time": "3 days ago"
+      }
+    ],
+    "value2": [
+      { "id":1,"Task": "File upload", "setDay":"2 days left" },
+      { "id":2,"Task": "system update","setDay":"5 days left" },
+      { "id":3,"Task": "Quality check","setDay":"10 days left" },
+      { "id":4,"Task": "Charger change","setDay":"12 days left" }
+    ],
+    "deletedItems": [],
+    "archiveItems": [],
+    "user":[{"name": "Vimal D", "email":"dvimal45@gmail.com"}]
+    
+
+  }
+  
