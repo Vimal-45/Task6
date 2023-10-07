@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useReducer, useState } from 'react';
+import React, {useState, useEffect, createContext,  useReducer  } from 'react';
 import Home from './Components/Home';
 import Note from './Components/Note';
 import Task from './Components/Task';
@@ -9,19 +9,25 @@ import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReducerAction from './Features/ReducerAction';
 
-import axios from 'axios';
+const fetchData = async () => {
+  try {
+    const response = await fetch("https://mocki.io/v1/4ef417eb-75d4-4e0a-ad2e-cb3683ef0cad");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
-const initialState = await axios.get("https://mocki.io/v1/4ef417eb-75d4-4e0a-ad2e-cb3683ef0cad")
-.then(res=>res.data).catch(error=>console.log(error));
+const initialState = await fetchData();
 
+const App = () => { 
 
-
-export const NoteContext = createContext()
-
-const App = () => {
-const [state, dispatch] = useReducer(ReducerAction, initialState);
-// console.log(initialState)
-
+  const [state, dispatch] = useReducer(ReducerAction, initialState );
+ 
   return (
     <div>
       <NoteContext.Provider value={{ state, dispatch }} >
@@ -42,4 +48,5 @@ const [state, dispatch] = useReducer(ReducerAction, initialState);
   );
 };
 
+export const NoteContext = createContext()
 export default App;

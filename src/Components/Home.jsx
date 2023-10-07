@@ -127,11 +127,11 @@ const Home = () => {
                             <div className='taskbox' key={index}>
                                 <Card >
                                     <Card.Body style={{ boxShadow: 'rgba(0, 0, 0, 0.2) 0px -1px 10px 4px', borderRadius: "10px" }} >
-                                     <i class="bi bi-circle"></i>   
-                                          <p className='taskContent' >          
-                                                <span className='taskTitle'>  {val.Task}</span>
-                                                <span className='taskday' > {val.setDay} </span>
-                                          </p>                                        
+                                        <i className="bi bi-circle"></i>
+                                        <p className='taskContent' >
+                                            <span className='taskTitle'>  {val.Task}</span>
+                                            <span className='taskday' > {val.setDay} </span>
+                                        </p>
                                         <Button className='button' onClick={() => {
 
                                             dispatch({ type: 'ARCHIVE', payload: val.Task })

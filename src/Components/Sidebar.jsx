@@ -8,6 +8,7 @@ const Sidebar = () => {
  
   const navigate = useNavigate();
   const {state}=useContext(NoteContext)
+  // console.log(state);
   
 
   return (
