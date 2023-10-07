@@ -8,23 +8,23 @@ import Sidebar from './Components/Sidebar';
 import { Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ReducerAction from './Features/ReducerAction';
-
-const fetchData = async () => {
-  try {
-    const response = await fetch("https://mocki.io/v1/4ef417eb-75d4-4e0a-ad2e-cb3683ef0cad");
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-const initialState = await fetchData();
+import  data from './Data.json'
 
 const App = () => { 
+
+  const [initialState,setIntialState] = useState(data)
+  
+   useEffect(()=>{
+      fetchData();
+   },[])
+
+   const fetchData = async () => {
+    const response = await fetch(`https://mocki.io/v1/4ef417eb-75d4-4e0a-ad2e-cb3683ef0cad`).then()
+    const data = await response.json();
+    console.log(data)
+    setIntialState(data); 
+
+  };
 
   const [state, dispatch] = useReducer(ReducerAction, initialState );
  
@@ -38,7 +38,7 @@ const App = () => {
           <Route path="/task" element={<Task />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/bin" element={<Bin />} />
-          <Route path="/home" element={<Home />} /> {/* Define a route for "/home" */}
+          <Route path="/home" element={<Home />} /> 
         </Routes>
 
       </NoteContext.Provider>
