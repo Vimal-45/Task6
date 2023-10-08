@@ -1,6 +1,8 @@
 import { useContext } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import { NoteContext } from '../App';
+import myPhoto from '../assets/photo.png'
+
 
 
 
@@ -15,8 +17,7 @@ const Sidebar = () => {
     <>
       <div className="sidebar">
         <div className="profile">
-          <img
-            src="https://mail.google.com/mail/u/0?ui=2&ik=ad444b3825&attid=0.10&permmsgid=msg-a:r-8908244014166878928&th=16daa4ba048f1e83&view=att&disp=safe&realattid=f_ib0ehmkk10"
+          <img src= {myPhoto}
             alt="Vimal D"
           />
           <div>
